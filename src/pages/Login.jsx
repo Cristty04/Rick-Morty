@@ -36,12 +36,10 @@ const Login = ({loginUser}) => {
 {/* a estos input le indicamos un id que corresponde con los campos de mi objeto formUser 
 y al cambiar con el onChange ejecuten el handlInput para ir seteando los valores de cada uno*/}
             <input type="text" id='email' value={FormUser.email} onChange={handleInput}/>
-
             <label htmlFor="password">Password</label>
             <input type="text" id='password' value={FormUser.password} onChange={handleInput}/>
             <button type='submit'> Login </button>
         </form>
-
     </div>
   )
 }

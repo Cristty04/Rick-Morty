@@ -1,6 +1,4 @@
 import './App.css';
-import Characters from './pages/Characters';
-import Location from './pages/Location';
 import Navigator from './core/Navigator';
 import { useState } from 'react';
 import { login } from './auth/auth';
@@ -20,7 +18,6 @@ function App() {
 
   return (
     <div className="App">
-     
       <Router>
         {/* a navigator le pasamos authenticated para que sepa cuando pintar el boton de login o logout y la función de logout para que la pueda usar*/}
         <Navigator authenticated={authenticated} logoutUser={logoutUser}/>
@@ -35,9 +32,6 @@ function App() {
       </Routes>
       </Router>
       
-      
-    
-    
     </div> 
   );
 }
