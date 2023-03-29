@@ -1,9 +1,39 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Navigator = () => {
+
+const Navigator = ({ authenticated, LogoutUser }) => {
   return (
-    <div>Navigator</div>
+    <nav>
+        <ul>
+            <li>
+               <Link to= "/">Characters</Link>
+            </li>
+            <li>
+               <Link to= "/">Location</Link>
+            </li>
+            <li>
+                <Link to= "/gallery">Gallery</Link>
+            </li>
+                 {authenticated ?(
+                    <li>
+                        <button onClick={LogoutUser}>Logout</button>
+
+                    </li>
+
+                 ): (
+           
+
+            <li>
+               <Link to= "/login">Login</Link>
+
+            </li>
+              )}
+        </ul>
+
+    </nav>
   )
 }
+
 
 export default Navigator
