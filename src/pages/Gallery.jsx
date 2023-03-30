@@ -21,7 +21,7 @@ const Gallery = () => {
     {episodes.length ? (
       <>
       {episodes.map((episodes)=>(
-        <div key={episodes._id}>{episodes.name}, {episodes.air_date}, {episodes.url}</div>
+        <div key={episodes._id}>{episodes.name}, {episodes.air_date}, {episodes.episode}</div>
       ))}
       </>
     ) : (
