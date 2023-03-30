@@ -1,23 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { Container, Navbar, Nav} from 'react-bootstrap';
+import Mortyf from '../assets/images/Mortyf.png'
 
 const Navigator = ({ authenticated, LogoutUser }) => {
    return (
-   <nav>
-   <ul>
-      <li><Link to= "/">Characters</Link></li>
-      <li><Link to= "/">Location</Link></li>
-      <li><Link to= "/gallery">Gallery</Link></li>
+      <Navbar bg="dark" variant="dark">
+      <Navbar.Brand href='#home'>
+         <img src={Mortyf} width= "170" height="100" className="MortyfLogo"
+              alt="Mortyf Logo"></img>
+      </Navbar.Brand>
+      <Nav>
+      <Link to= "/">Characters</Link>
+      <Link to= "/">Location</Link>
+      <Link to= "/gallery">Gallery</Link>
          {authenticated ?(
-            <li>
+           
                <button onClick={LogoutUser}>LogOut</button>
-            </li>
+            
       ): (
-            <li> <Link to= "/login"> Login </Link> </li>
+             <Link to= "/login"> Login </Link> 
          )}
-   </ul>
-   </nav>
+   </Nav>
+   </Navbar>
 )
 }
 
