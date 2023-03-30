@@ -10,9 +10,8 @@ const Characters = () => {
           const charactersAPI = await axios.get(
             "https://rickandmortyapi.com/api/character"
           )
+
         setCharacters(charactersAPI.data.results);
-
-
         }
         
        getCharacter()
@@ -24,16 +23,14 @@ const Characters = () => {
           {characters.length ? (
             <>
            {characters.map((character)=>(
-                <p key={character.id}>{character.name}</p>
-               
-                
-                
-
-
+                <div key={character.id}> 
+                <img src={character.image} alt=''/>
+                {character.name}
+                </div>
             ))} 
            </>
         ) : (
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"></img>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqTF76GK0KpGMxHEySHuVxmKHpJl6JVfnzKQ&usqp=CAU" alt=''/>
         )}
 
         </div>
