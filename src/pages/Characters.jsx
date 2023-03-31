@@ -23,7 +23,7 @@ const Characters = () => {
           {characters.length ? (
             <>
            {characters.map((character)=>(
-                <div key={character.id}> 
+                <div className='draw' key={character.id}> 
                 <img src={character.image} alt=''/>
                 {character.name}
                 </div>
