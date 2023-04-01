@@ -7,7 +7,7 @@ const Navigator = ({ authenticated, LogoutUser }) => {
    return (
       
       <Nav>
-      <img src={Mortyf} width= "170" height="100" className="MortyfLogo"
+      <img src={Mortyf} width= "180" height="150" className="MortyfLogo"
               alt="Mortyf Logo"></img>
          <button class= "Characters">
             <Link to= "/">Characters</Link>

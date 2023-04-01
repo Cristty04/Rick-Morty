@@ -19,62 +19,77 @@ button{
 
 .Characters{
     font-weight: bold;
-    margin-left: 500px;
-    margin-bottom: 30px;
+    margin-left: 110px;
+    margin-bottom: 110px;
+    padding-top: 10px;
+    margin-top: 50px;
+  
+    
 }
 
 .Location{
     font-weight: bold;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 110px;
+    margin-bottom: 110px;
+    margin-top: 50px;
 
 }
 
 .login{
     font-weight: bold;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 110px;
+    margin-bottom: 110px;
+    margin-top: 50px;
 
 }
 
 .logout{
     font-weight: bold;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 90px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+
 }
 
 
 .Gallery{
     font-weight: bold;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 110px;
+    margin-bottom: 110px;
+    margin-top: 50px;
 
 }
 
 
-img.MortyfLogo{
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    margin-top: 20px;
+.MortyfLogo{
+    margin-left: 5px;
+    margin-bottom:  20px;
+    margin-right: 20px;
+
+    
     
 }
 
 div{
-   margin-bottom: 40px;
-   display:flex;
-   align-items: center;
-   flex-wrap: wrap;
+  
    padding: 20px;
-    margin: 20px ;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+.loc{
+    display: flex;
+    flex-direction: column;
+}
+
+.gal{
+    display: flex;
+    justify-content: center;
+
+}
 
     
     

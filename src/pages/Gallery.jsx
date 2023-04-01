@@ -17,11 +17,11 @@ const Gallery = () => {
   },[])
 
   return (
-    <div> EPISODIOS
+    <div class= "gal"> EPISODIOS
     {episodes.length ? (
       <>
       {episodes.map((episodes)=>(
-        <div key={episodes._id}>{episodes.name}, {episodes.air_date}, {episodes.episode}</div>
+        <div  key={episodes._id}>{episodes.name}, {episodes.air_date}, {episodes.episode}</div>
       ))}
       </>
     ) : (

@@ -19,7 +19,7 @@ const Location = () => {
     }, [])
     
      return (
-        <div>
+        <div class= "loc">
           {locations.map((location)=>(
             <p key={location.id}>{location.name}</p>
           ))}
